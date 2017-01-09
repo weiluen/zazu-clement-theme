@@ -8,6 +8,14 @@ $transition-speed: .3s;
 
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 
+%clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
 * {
   box-sizing: border-box;
 }
@@ -73,19 +81,19 @@ section#zazu {
 
       li {
         display: block;
-        height: 45px;
-        line-height: 45px;
         border-bottom: 1px solid rgba(darken($color-primary, 10%), $transparency);
         -webkit-app-region: no-drag;
         cursor: pointer;
         width: 100%;
+        padding: 15px 10px;
+        @extend %clearfix;
 
         .icon {
           text-align: center;
           line-height: 30px;
           height: 45px;
           width: 45px;
-          padding: 7.5px;
+          padding: 5px;
           float: left;
         }
 
@@ -101,6 +109,7 @@ section#zazu {
         h2 {
           font-size: 20px;
           line-height: 25px;
+          font-weight: bold;
           &:last-child {
             font-size: 20px;
             line-height: 45px;
@@ -110,6 +119,7 @@ section#zazu {
         h3 {
           font-size: 15px;
           line-height: 15px;
+          color: #6A6A6A;
         }
 
         &.active {
@@ -118,6 +128,10 @@ section#zazu {
 
         &:hover {
           background-color: rgba(lighten($color-secondary, 10%), $transparency);
+        }
+
+        &:first-child {
+          border-top: 1px solid rgba(0, 0, 0, .1);
         }
       }
     }
