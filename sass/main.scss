@@ -137,6 +137,10 @@ section#zazu {
           box-shadow: 0 0 7px rgba(0, 0, 0, .1);
         }
 
+        &:focus {
+          outline: 0;
+        }
+
         &:first-child {
           border-top: 1px solid rgba(0, 0, 0, .1);
         }
