@@ -1,6 +1,9 @@
-$main: #F7F7F7;
-$secondary: #BDA0CB;
-$transparency: 0.1;
+$color-primary:   #0481FF;
+$color-secondary: #515151;
+$color-tertiary:  #FF7500;
+
+$transparency: .1;
+$gutter: 20px;
 
 html, body {
   margin: 0;
@@ -10,17 +13,18 @@ html, body {
 }
 
 body.playbook {
-  background-color: $main;
+  background-color: $color-primary;
 }
 
 section#zazu {
-  background-color: transparentize(darken($main, 5%), $transparency);
+  background-color: rgba(darken($color-primary, 5%), $transparency);
   background-image: inline-image('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
   -webkit-app-region: drag;
   cursor: move;
+  padding: $gutter;
 
   input {
     outline: none;
@@ -44,7 +48,7 @@ section#zazu {
     ul {
       padding: 0;
       margin: 0;
-      border-top: 1px solid transparentize(darken($main, 10%), $transparency);
+      border-top: 1px solid rgba(darken($color-primary, 10%), $transparency);
       max-height: 333px;
       overflow: hidden;
       width: 50%;
@@ -61,7 +65,7 @@ section#zazu {
         display: block;
         height: 45px;
         line-height: 45px;
-        border-bottom: 1px solid transparentize(darken($main, 10%), $transparency);
+        border-bottom: 1px solid rgba(darken($color-primary, 10%), $transparency);
         -webkit-app-region: no-drag;
         cursor: pointer;
         width: 100%;
@@ -100,11 +104,11 @@ section#zazu {
         }
 
         &.active {
-          background-color: transparentize($secondary, $transparency);
+          background-color: rgba($color-secondary, $transparency);
         }
 
         &:hover {
-          background-color: transparentize(lighten($secondary, 10%), $transparency);
+          background-color: rgba(lighten($color-secondary, 10%), $transparency);
         }
       }
     }
