@@ -60,6 +60,7 @@ section#zazu {
   div.results {
     display: flex;
     flex-direction: row;
+    background: $color-primary;
 
     ul {
       padding: 0;

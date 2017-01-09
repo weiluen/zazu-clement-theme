@@ -41,7 +41,8 @@ section#zazu {
     border: 0; }
   section#zazu div.results {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    background: #0481FF; }
     section#zazu div.results ul {
       padding: 0;
       margin: 0;
