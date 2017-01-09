@@ -36,12 +36,15 @@ section#zazu {
     outline: none;
     font-size: 40px;
     width: 500px;
-    padding: 10px;
+    padding: 15px 20px;
     border: 0;
     -webkit-app-region: no-drag;
     cursor: auto;
     background: #FFF;
     border-radius: 3px;
+    width: 560px;
+    border: 1px solid rgba(0, 0, 0, .1);
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .05);
   }
 
   iframe#preview {
