@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box; }
+
 html, body {
   margin: 0;
   padding: 0;
@@ -23,9 +26,10 @@ section#zazu {
     width: 500px;
     padding: 10px;
     border: 0;
-    background-color: transparent;
     -webkit-app-region: no-drag;
-    cursor: auto; }
+    cursor: auto;
+    background: #FFF;
+    border-radius: 3px; }
   section#zazu iframe#preview {
     border: 0; }
   section#zazu div.results {
