@@ -63,12 +63,19 @@ section#zazu {
     display: flex;
     flex-direction: row;
     background: #f9f9f9;
+    position: relative;
+
+    &:before {
+      content: '';
+      position: absolute;
+    }
 
     ul {
       padding: 0;
       margin: 0;
       max-height: 333px;
       overflow: hidden;
+      overflow-y: scroll;
       width: 50%;
 
       &:last-child {
@@ -121,7 +128,6 @@ section#zazu {
         h3 {
           font-weight: normal;
           font-size: 15px;
-          line-height: 15px;
           color: #6A6A6A;
         }
 

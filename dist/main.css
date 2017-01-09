@@ -41,12 +41,17 @@ section#zazu {
   section#zazu div.results {
     display: flex;
     flex-direction: row;
-    background: #f9f9f9; }
+    background: #f9f9f9;
+    position: relative; }
+    section#zazu div.results:before {
+      content: '';
+      position: absolute; }
     section#zazu div.results ul {
       padding: 0;
       margin: 0;
       max-height: 333px;
       overflow: hidden;
+      overflow-y: scroll;
       width: 50%; }
       section#zazu div.results ul:last-child {
         width: 100%; }
@@ -85,7 +90,6 @@ section#zazu {
         section#zazu div.results ul li h3 {
           font-weight: normal;
           font-size: 15px;
-          line-height: 15px;
           color: #6A6A6A; }
         section#zazu div.results ul li:hover, section#zazu div.results ul li:active {
           background: #FFF;
