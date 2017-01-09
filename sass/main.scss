@@ -6,6 +6,8 @@ $transparency: .1;
 $gutter: 20px;
 $transition-speed: .3s;
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
 * {
   box-sizing: border-box;
 }
@@ -22,16 +24,16 @@ body.playbook {
 }
 
 section#zazu {
-  background-color: #F9F9F9;
+  background: #FFF;
   // background-image: inline-image('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
   -webkit-app-region: drag;
   cursor: move;
-  padding: $gutter;
-  box-shadow: 0px 1px 2px rgba(0,0,0,0.1);
+  border: 2px solid rgba(0,0,0,0.1);
   border-radius: 3px;
+  font-family: 'Open Sans', sans-serif;
 
   input {
     outline: none;
@@ -41,19 +43,7 @@ section#zazu {
     border: 0;
     -webkit-app-region: no-drag;
     cursor: auto;
-    background: #FFF;
-    border-radius: 3px 3px 0 0;
     width: 560px;
-    border: 1px solid rgba(0, 0, 0, .1);
-    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .05);
-    transition: all $transition-speed ease;
-    transition-property: border, box-shadow;
-    transition-duration: $transition-speed;
-    transition-timing-function: ease-in;
-    &:focus {
-      border: 1px solid rgba(0, 0, 0, .3);
-      box-shadow: inset 1px 1px 2px rgba($color-primary, .05);
-    }
   }
 
   iframe#preview {
@@ -63,7 +53,7 @@ section#zazu {
   div.results {
     display: flex;
     flex-direction: row;
-    background: rgba(0, 0, 0, .1);
+    background: #f9f9f9;
 
     ul {
       padding: 0;
@@ -105,7 +95,6 @@ section#zazu {
           overflow: hidden;
           text-overflow: ellipsis;
           font-weight: 400;
-          font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
         }
 
         h2 {
