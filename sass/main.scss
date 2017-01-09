@@ -4,6 +4,7 @@ $color-tertiary:  #FF7500;
 
 $transparency: .1;
 $gutter: 20px;
+$transition-speed: .3s;
 
 * {
   box-sizing: border-box;
@@ -41,10 +42,15 @@ section#zazu {
     -webkit-app-region: no-drag;
     cursor: auto;
     background: #FFF;
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
     width: 560px;
     border: 1px solid rgba(0, 0, 0, .1);
     box-shadow: inset 1px 1px 2px rgba(0, 0, 0, .05);
+    transition: all $transition-speed ease;
+    &:focus {
+      border: 1px solid rgba(0, 0, 0, .3);
+      box-shadow: inset 1px 1px 2px rgba($color-primary, .05);
+    }
   }
 
   iframe#preview {
@@ -58,7 +64,6 @@ section#zazu {
     ul {
       padding: 0;
       margin: 0;
-      border-top: 1px solid rgba(darken($color-primary, 10%), $transparency);
       max-height: 333px;
       overflow: hidden;
       width: 50%;

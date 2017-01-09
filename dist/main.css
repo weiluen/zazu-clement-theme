@@ -29,10 +29,14 @@ section#zazu {
     -webkit-app-region: no-drag;
     cursor: auto;
     background: #FFF;
-    border-radius: 3px;
+    border-radius: 3px 3px 0 0;
     width: 560px;
     border: 1px solid rgba(0, 0, 0, 0.1);
-    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05); }
+    box-shadow: inset 1px 1px 2px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease; }
+    section#zazu input:focus {
+      border: 1px solid rgba(0, 0, 0, 0.3);
+      box-shadow: inset 1px 1px 2px rgba(4, 129, 255, 0.05); }
   section#zazu iframe#preview {
     border: 0; }
   section#zazu div.results {
@@ -41,7 +45,6 @@ section#zazu {
     section#zazu div.results ul {
       padding: 0;
       margin: 0;
-      border-top: 1px solid rgba(0, 104, 208, 0.1);
       max-height: 333px;
       overflow: hidden;
       width: 50%; }
