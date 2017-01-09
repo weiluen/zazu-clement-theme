@@ -5,10 +5,10 @@ html, body {
   overflow: hidden; }
 
 body.playbook {
-  background-color: #0481FF; }
+  background-color: #FFF; }
 
 section#zazu {
-  background-color: rgba(0, 116, 234, 0.1);
+  background-color: #F9F9F9;
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
