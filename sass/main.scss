@@ -77,11 +77,12 @@ section#zazu {
 
       + div {
         width: 50%;
+        background: #313131;
       }
 
       li {
         display: block;
-        border-bottom: 1px solid rgba(darken($color-primary, 10%), $transparency);
+        border-bottom: 1px solid rgba(0, 0, 0, .05);
         -webkit-app-region: no-drag;
         cursor: pointer;
         width: 100%;
@@ -103,13 +104,13 @@ section#zazu {
           white-space: nowrap;
           overflow: hidden;
           text-overflow: ellipsis;
-          font-weight: 400;
         }
 
         h2 {
           font-size: 20px;
           line-height: 25px;
           font-weight: bold;
+          color: #212121;
           &:last-child {
             font-size: 20px;
             line-height: 45px;
@@ -117,6 +118,7 @@ section#zazu {
         }
 
         h3 {
+          font-weight: normal;
           font-size: 15px;
           line-height: 15px;
           color: #6A6A6A;

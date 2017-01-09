@@ -51,10 +51,11 @@ section#zazu {
       section#zazu div.results ul:last-child {
         width: 100%; }
       section#zazu div.results ul + div {
-        width: 50%; }
+        width: 50%;
+        background: #313131; }
       section#zazu div.results ul li {
         display: block;
-        border-bottom: 1px solid rgba(0, 104, 208, 0.1);
+        border-bottom: 1px solid rgba(0, 0, 0, 0.05);
         -webkit-app-region: no-drag;
         cursor: pointer;
         width: 100%;
@@ -71,16 +72,17 @@ section#zazu {
           padding-left: 10px;
           white-space: nowrap;
           overflow: hidden;
-          text-overflow: ellipsis;
-          font-weight: 400; }
+          text-overflow: ellipsis; }
         section#zazu div.results ul li h2 {
           font-size: 20px;
           line-height: 25px;
-          font-weight: bold; }
+          font-weight: bold;
+          color: #212121; }
           section#zazu div.results ul li h2:last-child {
             font-size: 20px;
             line-height: 45px; }
         section#zazu div.results ul li h3 {
+          font-weight: normal;
           font-size: 15px;
           line-height: 15px;
           color: #6A6A6A; }
