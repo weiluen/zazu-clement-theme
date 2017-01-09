@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700");
 section#zazu div.results ul li:after {
   content: "";
   display: table;
@@ -59,7 +59,8 @@ section#zazu {
         -webkit-app-region: no-drag;
         cursor: pointer;
         width: 100%;
-        padding: 15px 10px; }
+        padding: 15px 10px;
+        transition: all 0.3s ease; }
         section#zazu div.results ul li .icon {
           text-align: center;
           line-height: 30px;
@@ -86,9 +87,9 @@ section#zazu {
           font-size: 15px;
           line-height: 15px;
           color: #6A6A6A; }
-        section#zazu div.results ul li.active {
-          background-color: rgba(81, 81, 81, 0.1); }
-        section#zazu div.results ul li:hover {
-          background-color: rgba(107, 107, 107, 0.1); }
+        section#zazu div.results ul li:hover, section#zazu div.results ul li:active {
+          background: #FFF;
+          border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); }
         section#zazu div.results ul li:first-child {
           border-top: 1px solid rgba(0, 0, 0, 0.1); }

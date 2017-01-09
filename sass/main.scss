@@ -6,7 +6,7 @@ $transparency: .1;
 $gutter: 20px;
 $transition-speed: .3s;
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 
 %clearfix {
   &:after {
@@ -87,6 +87,7 @@ section#zazu {
         cursor: pointer;
         width: 100%;
         padding: 15px 10px;
+        transition: all $transition-speed ease;
         @extend %clearfix;
 
         .icon {
@@ -124,12 +125,10 @@ section#zazu {
           color: #6A6A6A;
         }
 
-        &.active {
-          background-color: rgba($color-secondary, $transparency);
-        }
-
-        &:hover {
-          background-color: rgba(lighten($color-secondary, 10%), $transparency);
+        &:hover, &:active {
+          background: #FFF;
+          border-bottom: 1px solid rgba(0, 0, 0, .1);
+          box-shadow: 0 0 7px rgba(0, 0, 0, .1);
         }
 
         &:first-child {
