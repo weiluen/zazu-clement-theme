@@ -36,7 +36,8 @@ section#zazu {
     cursor: auto;
     width: 100%; }
   section#zazu iframe#preview {
-    border: 0; }
+    border: 0;
+    background: #313131; }
   section#zazu div.results {
     display: flex;
     flex-direction: row;
@@ -54,8 +55,7 @@ section#zazu {
       section#zazu div.results ul:last-child {
         width: 100%; }
       section#zazu div.results ul + div {
-        width: 50%;
-        background: #313131; }
+        width: 50%; }
       section#zazu div.results ul li {
         display: block;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);

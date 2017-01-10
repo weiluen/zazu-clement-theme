@@ -56,6 +56,7 @@ section#zazu {
 
   iframe#preview {
     border: 0;
+    background: #313131;
   }
 
   div.results {
@@ -82,7 +83,6 @@ section#zazu {
 
       + div {
         width: 50%;
-        background: #313131;
       }
 
       li {
