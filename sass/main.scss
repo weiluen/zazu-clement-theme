@@ -32,7 +32,6 @@ body.playbook {
 }
 
 section#zazu {
-  background: #FFF;
   // background-image: inline-image('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
@@ -52,7 +51,7 @@ section#zazu {
     border: 0;
     -webkit-app-region: no-drag;
     cursor: auto;
-    width: 560px;
+    width: 100%;
   }
 
   iframe#preview {
@@ -142,6 +141,10 @@ section#zazu {
 
         &:first-child {
           border-top: 1px solid rgba(0, 0, 0, .1);
+        }
+
+        &:last-child {
+          border-bottom: 0;
         }
       }
     }

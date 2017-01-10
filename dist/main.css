@@ -17,7 +17,6 @@ body.playbook {
   background-color: #FFF; }
 
 section#zazu {
-  background: #FFF;
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
@@ -35,7 +34,7 @@ section#zazu {
     border: 0;
     -webkit-app-region: no-drag;
     cursor: auto;
-    width: 560px; }
+    width: 100%; }
   section#zazu iframe#preview {
     border: 0; }
   section#zazu div.results {
@@ -98,3 +97,5 @@ section#zazu {
           outline: 0; }
         section#zazu div.results ul li:first-child {
           border-top: 1px solid rgba(0, 0, 0, 0.1); }
+        section#zazu div.results ul li:last-child {
+          border-bottom: 0; }
