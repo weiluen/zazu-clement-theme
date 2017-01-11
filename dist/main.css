@@ -15,9 +15,16 @@ html, body {
   height: 100%; }
 
 body.playbook {
-  background-color: #FFF;
-  background: url(https://unsplash.it/1000/1000/?blur) no-repeat center center;
+  background: #4D6A45 url(https://unsplash.it/1000/1000/?blur) no-repeat center center;
   background-size: cover; }
+
+#install {
+  color: #FFF;
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 0 0 3px 3px;
+  padding: 5px 20px; }
+  #install h2 {
+    font-size: 24px; }
 
 section#zazu {
   background-position: 530px 5px;
