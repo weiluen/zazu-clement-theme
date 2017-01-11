@@ -43,6 +43,10 @@ section#zazu {
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0 0 0;
 
+  > div {
+    background: #FFF;
+  }
+
   input {
     outline: none;
     font-size: 40px;
@@ -56,7 +60,7 @@ section#zazu {
 
   iframe#preview {
     border: 0;
-    background: #313131;
+    background: #E1E1E1;
   }
 
   div.results {
@@ -74,7 +78,7 @@ section#zazu {
       padding: 0;
       margin: 0;
       max-height: 310px;
-      overflow-y: scroll;
+      overflow-y: hidden;
       width: 50%;
 
       &:last-child {
@@ -129,10 +133,10 @@ section#zazu {
           color: #6A6A6A;
         }
 
-        &:hover, &:active {
+        &:hover, &.active {
           background: #FFF;
           border-bottom: 1px solid rgba(0, 0, 0, .1);
-          box-shadow: 0 0 7px rgba(0, 0, 0, .1);
+          box-shadow: 0 0 7px rgba(0, 0, 0, .1), inset 0 -2px 0 $color-primary;
         }
 
         &:focus {

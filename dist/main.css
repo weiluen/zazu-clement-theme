@@ -26,6 +26,8 @@ section#zazu {
   border-radius: 3px;
   font-family: 'Open Sans', sans-serif;
   box-shadow: 0 0 0; }
+  section#zazu > div {
+    background: #FFF; }
   section#zazu input {
     outline: none;
     font-size: 40px;
@@ -37,7 +39,7 @@ section#zazu {
     width: 100%; }
   section#zazu iframe#preview {
     border: 0;
-    background: #313131; }
+    background: #E1E1E1; }
   section#zazu div.results {
     display: flex;
     flex-direction: row;
@@ -50,7 +52,7 @@ section#zazu {
       padding: 0;
       margin: 0;
       max-height: 310px;
-      overflow-y: scroll;
+      overflow-y: hidden;
       width: 50%; }
       section#zazu div.results ul:last-child {
         width: 100%; }
@@ -89,10 +91,10 @@ section#zazu {
           font-weight: normal;
           font-size: 15px;
           color: #6A6A6A; }
-        section#zazu div.results ul li:hover, section#zazu div.results ul li:active {
+        section#zazu div.results ul li:hover, section#zazu div.results ul li.active {
           background: #FFF;
           border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-          box-shadow: 0 0 7px rgba(0, 0, 0, 0.1); }
+          box-shadow: 0 0 7px rgba(0, 0, 0, 0.1), inset 0 -2px 0 #0481FF; }
         section#zazu div.results ul li:focus {
           outline: 0; }
         section#zazu div.results ul li:first-child {
