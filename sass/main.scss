@@ -29,10 +29,11 @@ html, body {
 
 body.playbook {
   background-color: #FFF;
+  background: url(https://unsplash.it/1000/1000/?blur) no-repeat center center;
+  background-size: cover;
 }
 
 section#zazu {
-  // background-image: inline-image('../images/feather.png');
   background-position: 530px 5px;
   background-repeat: no-repeat;
   background-size: 60px;
@@ -56,19 +57,15 @@ section#zazu {
     -webkit-app-region: no-drag;
     cursor: auto;
     width: 100%;
+    background-image: inline-image('../images/search.png');
+    background-size: 25px 25px;
+    background-position: center right;
   }
 
   iframe#preview {
     border: 0;
     background: #E1E1E1;
     box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .1);
-    position: relative;
-    &:before {
-      content: "Preview";
-      position: absolute;
-      bottom: 0;
-      right: 0;
-    }
   }
 
   div.results {
