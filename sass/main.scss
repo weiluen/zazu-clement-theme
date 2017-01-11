@@ -35,6 +35,16 @@ body.playbook {
   background-size: cover;
 }
 
+#install {
+  color: #FFF;
+  background: rgba(0, 0, 0, .7);
+  border-radius: 0 0 3px 3px;
+  padding: 5px 20px;
+  h2 {
+    font-size: 24px;
+  }
+}
+
 section#zazu {
   background-position: 530px 5px;
   background-repeat: no-repeat;
