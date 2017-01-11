@@ -1,6 +1,6 @@
-## Light Theme
+## Clement Theme
 
-A light theme example written in SASS with node/gulp.
+A simple, spacious and clean theme for Zazu.
 
 [View a demo](https://tinytacoteam.github.io/zazu-theme-playbook/#Eric-Jackson/zazu-clement-theme)
 
